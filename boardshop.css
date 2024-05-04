@@ -1,0 +1,13 @@
+.header {
+    background-image: url("SnowboardingHeader.jpg"); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the background image */
+    height: 400px; /* Set the height of your header */
+    width: 100%; /* Makes the header span the full width of the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Set the text color */
+    font-size: 24px; /* Set the font size */
+    text-align: center;
+}
