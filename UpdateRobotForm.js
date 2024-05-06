@@ -39,6 +39,30 @@ function UpdateRobotForm({ onUpdateRobot, page }) {
     else if (page == "ski8") {
       url = `http://localhost:8081/updateRobot8/${robotId}`
     }
+    else if (page == "board1") {
+      url = `http://localhost:8081/updateRobot1B/${robotId}`
+    }
+    else if (page == "board2") {
+      url = `http://localhost:8081/updateRobot2B/${robotId}`
+    }
+    else if (page == "board3") {
+      url = `http://localhost:8081/updateRobot3B/${robotId}`
+    }
+    else if (page == "board4") {
+      url = `http://localhost:8081/updateRobot4B/${robotId}`
+    }
+    else if (page == "board5") {
+      url = `http://localhost:8081/updateRobot5B/${robotId}`
+    }
+    else if (page == "board6") {
+      url = `http://localhost:8081/updateRobot6B/${robotId}`
+    }
+    else if (page == "board7") {
+      url = `http://localhost:8081/updateRobot7B/${robotId}`
+    }
+    else if (page == "board8") {
+      url = `http://localhost:8081/updateRobot8B/${robotId}`
+    }
 
     // PUT request to update the robot's price
     fetch(url, {
@@ -60,7 +84,7 @@ function UpdateRobotForm({ onUpdateRobot, page }) {
       setRobotId(''); // Clear the form fields
       setNewPrice('');
       setNewDescription('');
-      alert("Robot price updated successfully.");
+      alert("Review Updated Successfully.");
     })
     .catch(error => {
       console.error('Error:', error);
@@ -92,7 +116,7 @@ function UpdateRobotForm({ onUpdateRobot, page }) {
         onChange={(e) => setNewDescription(e.target.value)}
         required
       />
-      <button type="submit">Update Price</button>
+      <button type="submit">Update Review</button>
     </form>
   );
 }

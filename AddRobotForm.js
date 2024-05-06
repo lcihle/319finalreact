@@ -52,6 +52,38 @@ function AddRobotForm({ onAddRobot, page }) {
     else if (page == "ski8") {
        url = "http://localhost:8081/addRobot8"
     }
+    else if (page == 'board1')
+    {
+      url = "http://localhost:8081/addRobot1B"
+    }
+    else if (page == 'board2')
+    {
+      url = "http://localhost:8081/addRobot2B"
+    }
+    else if (page == 'board3')
+    {
+      url = "http://localhost:8081/addRobot3B"
+    }
+    else if (page == 'board4')
+    {
+      url = "http://localhost:8081/addRobot4B"
+    }
+    else if (page == 'board5')
+    {
+      url = "http://localhost:8081/addRobot5B"
+    }
+    else if (page == 'board6')
+    {
+      url = "http://localhost:8081/addRobot6B"
+    }
+    else if (page == 'board7')
+    {
+      url = "http://localhost:8081/addRobot7B"
+    }
+    else if (page == 'board8')
+    {
+      url = "http://localhost:8081/addRobot8B"
+    }
     // POST request to add the robot
     fetch(url, {
       method: 'POST',

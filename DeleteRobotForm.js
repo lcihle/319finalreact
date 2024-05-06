@@ -36,6 +36,30 @@ function DeleteRobotForm({ onDeleteRobot, page }) {
     else if (page == "ski8") {
        url = `http://localhost:8081/deleteRobot8/${robotId}`
     }
+    else if (page == "board1") {
+      url = `http://localhost:8081/deleteRobot1B/${robotId}`
+    }
+    else if (page == "board2") {
+      url = `http://localhost:8081/deleteRobot2B/${robotId}`
+    }
+    else if (page == "board3") {
+      url = `http://localhost:8081/deleteRobot3B/${robotId}`
+    }
+    else if (page == "board4") {
+      url = `http://localhost:8081/deleteRobot4B/${robotId}`
+    }
+    else if (page == "board5") {
+      url = `http://localhost:8081/deleteRobot5B/${robotId}`
+    }
+    else if (page == "board6") {
+      url = `http://localhost:8081/deleteRobot6B/${robotId}`
+    }
+    else if (page == "board7") {
+      url = `http://localhost:8081/deleteRobot7B/${robotId}`
+    }
+    else if (page == "board8") {
+      url = `http://localhost:8081/deleteRobot8B/${robotId}`
+    }
 
     // DELETE request to remove the robot
     fetch(url, {

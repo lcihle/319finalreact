@@ -38,6 +38,30 @@ function FetchRobotForm({page}) {
         else if (page == "ski8") {
            url = `http://localhost:8081/skis8/${robotId}`
         }
+        else if (page == "board1") {
+            url = `http://localhost:8081/board1/${robotId}`
+         }
+         else if (page == "board2") {
+            url = `http://localhost:8081/board2/${robotId}`
+         }
+         else if (page == "board3") {
+            url = `http://localhost:8081/board3/${robotId}`
+         }
+         else if (page == "board4") {
+            url = `http://localhost:8081/board4/${robotId}`
+         }
+         else if (page == "board5") {
+            url = `http://localhost:8081/board5/${robotId}`
+         }
+         else if (page == "board6") {
+            url = `http://localhost:8081/board6/${robotId}`
+         }
+         else if (page == "board7") {
+            url = `http://localhost:8081/board7/${robotId}`
+         }
+         else if (page == "board8") {
+            url = `http://localhost:8081/board8/${robotId}`
+         }
 
         fetch(url)
             .then(response => {

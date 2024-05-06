@@ -1,5 +1,5 @@
 import React from 'react';
-import RobotCard from './RobotCard';
+import RobotCard from '../RobotCard';
 
 function RobotGallery({ robots }) {
   return (
